@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="media">
+            <img id="background-img" src="images/background.jpg">
+            <div class="logo">
+                <img id="logo" src="images/odin-lined.png">
+                <div id="logo2">ODIN</div>
+            </div>
+            <div class="credits">
+                <div>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="paragraph">
+                <p id="openingpar">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. </p>
+                <p id="closingpar">You <em>know </em>you want to.</p>
+            </div>
+            <form action="/" method="post" id="signup">
+                <p id="encourage">Let's do this!</p>
+                <p id="explainspan">Fields marked with <span>*</span> are required!</p>
+                <div id="formcontainer">
+                    <div id="form">
+                        <div class="input">
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                            <label for="firstname">FIRST NAME <span>*</span></label>
+                            <p class="error-text fname-error"></p>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required> 
+                            <label for="lastname">LAST NAME <span>*</span></label>
+                            <p class="error-text lname-error"></p>
+                        </div>
+                        <div class="input">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <label for="email">EMAIL <span>*</span></label>
+                            <p class="error-text email-error"></p>
+                        </div>
+                        <div class="input">
+                            <input type="tel" pattern="[0-9]{10}" id="phone-number" placeholder="Phone Number" name="phone-number">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <p class="error-text phone-error"></p>
+                        </div>
+                        <div class="input">
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <label for="password">PASSWORD <span>*</span></label>
+                            <p class="error-text password-error"></p>
+                            <div id="pw-strength">
+                                <div class="strength-section" id="strength-section-1"></div>
+                                <div class="strength-section" id="strength-section-2"></div>
+                                <div class="strength-section" id="strength-section-3"></div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                            <label for="confirmPassword">CONFIRM PASSWORD <span>*</span></label>
+                            <span class="toggle-pw" id="toggle-pw"><i class="far fa-eye"></i></span>
+                            <p class="error-text confirm-password-error"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="buttoncontainer">
+                    <button type="submit" id="submit-btn">Create Account</button>
+                    <p class="error-text signup-error"></p>
+                </div>
+            </form>
+            <div id="login-div">
+                Already have an account? <a id="login-text" href="login.html">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
